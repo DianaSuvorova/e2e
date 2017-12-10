@@ -8,9 +8,15 @@
     "react-scripts": "1.0.17"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "REACT_APP_IS_E2E_TEST=true react-scripts start",
     "build": "react-scripts build",
+    "e2e": "react-scripts test",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0",
+    "puppeteer": "^0.13.0"
   }
 }
