@@ -70,6 +70,6 @@ Corresponding change to  `start` script [package.json]('./package.js')
 
 ## Running tests with Travis
 
-To run integration with Travis I have added [scripts/e2e.js]('./scripts/e2e.js'). The script first launch compilation and starts server on first available port (`npm start`), and then launches tests.
+To run integration with Travis I have added [scripts/e2e.js](./scripts/e2e.js). The script first launch compilation and starts server on first available port (`npm start`), and then launches tests.
 
 Thus one can run integration tests on any PR which is not possible with saucelabs at the moment without compromising saucelabs login credentials. 
