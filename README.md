@@ -46,7 +46,7 @@ To run the test have `npm start` running and run `npm test`. It will run both un
 
 ## Set Up
 
-The only change compared to vanilla create-react-app is in [src/index.js]('./src/index.js')
+The only change compared to vanilla create-react-app is in [src/index.js](./src/index.js)
 
 
 ```js
@@ -62,7 +62,7 @@ where the App element gets wrapped into enzyme element which in turn get rendere
 This is equivalent to rendering App directly with ReactDOM since that what enzyme internally does anyway after wrapping it into its testing API layer.
 There might be some performance losses but it is way worth the convenience of local integration e2e test.
 
-Corresponding change to  `start` script [package.json]('./package.js')
+Corresponding change to  `start` script [package.json](./package.js)
 
 ```json
     "start": "REACT_APP_IS_E2E_TEST=true react-scripts start",
