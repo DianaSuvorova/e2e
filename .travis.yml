@@ -3,4 +3,4 @@ sudo: required
 node_js:
   - '9'
 script:
-  - npm run test
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm run sauceLabs ||  npm test'

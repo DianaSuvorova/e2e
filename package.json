@@ -11,6 +11,7 @@
     "start": "REACT_APP_IS_E2E_TEST=true react-scripts start",
     "build": "react-scripts build",
     "test": "node scripts/e2e.js",
+    "sauceLabs": "node scripts/sauceLabs.js",
     "unit-test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
@@ -18,6 +19,7 @@
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
     "get-port": "^3.2.0",
+    "jsunitsaucelabs": "^1.3.0",
     "net": "^1.0.2",
     "puppeteer": "^0.13.0",
     "retry": "^0.10.1",
