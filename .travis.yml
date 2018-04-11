@@ -5,4 +5,4 @@ node_js:
 addons:
   sauce_connect: true
 script:
-  - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH;
+  - 'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then echo $TRAVIS_BRANCH; fi'
