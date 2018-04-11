@@ -5,9 +5,4 @@ node_js:
 addons:
   sauce_connect: true
 script:
-  - if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then
-      npm run test;
-    fi
-  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then
-      npm run sauceLabs;
-    fi
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && npm run sauceLabs ||  npm test'
